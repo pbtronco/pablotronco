@@ -1,0 +1,78 @@
+body{
+    background-image: url("../imagens/background2.jpg");
+    background-size: cover;
+}
+.container-box {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f2e41d00;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 45px;
+    -webkit-box-shadow: 0px 0px 33px 10px rgba(0,0,0,0.71); 
+    box-shadow: 0px 0px 33px 10px rgba(0,0,0,0.71);
+    text-align: justify;
+    width: 1250px;
+
+}
+.container-box h1, h2{
+    text-align: center;
+}
+
+.zoom{
+    overflow: hidden;
+}
+
+.zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.zoom:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+footer{
+    color: #000000;
+    background-color: #0d0d0d23;
+    text-align: center;
+}
+.flexp{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: black; 
+
+}
+.flexp > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.divimg{
+    clear: both;
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.div-text{
+    float: center;
+    margin-left: 10px;
+}

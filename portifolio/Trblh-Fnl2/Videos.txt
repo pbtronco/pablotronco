@@ -1,0 +1,84 @@
+Lógica de Programação:
+1- https://youtu.be/grcIjJ6bx8k
+Video 1: Introdução a Lógica de Programação - O Que Precisa Saber Antes de Aprender Python
+
+Canal: Hashtag Programação
+
+
+2-https://youtu.be/fE-QYIANtyo
+Video 2 : Aprenda Lógica de Programação com PYTHON / PROF. Guilherme Grillo
+
+Canal: Danki Code
+
+3- https://www.youtube.com/embed/LfDAEaQj9tY
+Video 3:PYTHON PARA INICIANTES - RESOLVA ALGUNS EXERCÍCIOS
+
+Canal: Código Logo
+
+HTML5:
+
+1- https://www.youtube.com/embed/SV7TL0hxmIQ
+Video 1: Curso de HTML para iniciantes - Aprenda HTML em 1 hora
+
+Canal: Matheus Battisti - Hora de Codar
+
+
+2- https://www.youtube.com/embed/65SsiV1fgdY
+Video 2: Curso de HTML - Estrutura HTML5 - Aula 1
+
+Canal: Noturama
+
+3 - https://www.youtube.com/embed/EANOXuQsglo
+Video 3: Curso de HTML - Tags Básicas em HTML5 / Gustavo Guanabara
+
+Canal: Curso em Vídeo
+
+
+
+CSS3:
+1 - www.youtube.com/embed/qdTDp7Wr0DU
+Video 1: CSS3: Aprenda como Funciona a Estrutura CSS
+
+Canal: hcode
+
+2-https://www.youtube.com/embed/w1J6gY40yMo
+Video 2: Curso CSS Completo
+
+Canal: Programação Web
+
+3- https://www.youtube.com/embed/fYR9L2ZmodM
+Video 3: Desafio: 10 projetos rápidos para treinar Programação e conseguir um Emprego
+
+Canal: Filipe Deschamps
+
+Bootstrap:
+1 -www.youtube.com/embed/wiq1Zs9-qMQ
+Video 1: Iniciando com Bootstrap - #01- Introdução
+
+Canal: Descompila
+
+2 - https://www.youtube.com/embed/jsTJL6Da5wc
+Video 2: Bootstrap - (Guia para Iniciantes) 
+ 
+Canal: Hostinger Brasil
+
+3 - https://www.youtube.com/embed/3Ba6hDG5sHo
+Video 3: BOOTSTRAP GRID - Entenda as 12 colunas
+
+Canal: Codificando
+
+JavaScript:
+1- https://www.youtube.com/embed/KWntxkf25nA
+Video 1: Como aprender JAVASCRIPT, para iniciantes!
+
+Canal: Attekita Dev
+
+2- https://www.youtube.com/embed/WcIIUmDch94
+Video 2: JavaScript para Iniciantes 2020 - 100% Prático!
+
+Canal: Cod3r Cursos
+
+3- https://www.youtube.com/embed/DdtTFXSjcLI
+Video 3: Exercícios de JavaScript - Condicionais e Funções - Aprendendo Front-end
+
+Canal: Douglas Toledo
