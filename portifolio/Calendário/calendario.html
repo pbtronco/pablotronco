@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários de Aula</title>
+    <style>
+        .titulo-texto {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        .card-header {
+            font-size: 32px;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #474747;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: center;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            vertical-align: middle;
+            width: calc(16.66% - 2px);
+            max-width: 150px;
+            word-wrap: break-word;
+            letter-spacing: -0.5px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .intervalo {
+            background-color: #ffcccc;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        x-sign {
+            --interval: 1s;
+            display: block;
+            text-shadow:
+                0 0 10px var(--color1),
+                0 0 20px var(--color2),
+                0 0 40px var(--color3),
+                0 0 80px var(--color4);
+            will-change: filter, color;
+            filter: saturate(60%);
+            animation: flicker steps(100) var(--interval) 1s infinite;
+        }
+
+        x-sign:nth-of-type(1) {
+            color: #50ACDE;
+            --color1: #5052DE;
+            --color2: #507FDE;
+            --color3: #50D9DE;
+            --color4: #7C50DE;
+            font-family: Monoton;
+        }
+
+        @keyframes flicker {
+            50% {
+                color: white;
+                filter: saturate(200%) hue-rotate(20deg);
+            }
+        }
+
+        /* Media Queries para responsividade */
+        @media only screen and (max-width: 768px) {
+
+            table,
+            th,
+            td {
+                font-size: 14px;
+            }
+
+            .titulo-texto,
+            .card-header {
+                font-size: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            table,
+            th,
+            td {
+                font-size: 12px;
+            }
+
+            .titulo-texto,
+            .card-header {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <script>
+        const signs = document.querySelectorAll('x-sign')
+        const randomIn = (min, max) => (
+            Math.floor(Math.random() * (max - min + 1) + min)
+        )
+
+        const mixupInterval = el => {
+            const ms = randomIn(2000, 4000)
+            el.style.setProperty('--interval', `${ms}ms`)
+        }
+
+        signs.forEach(el => {
+            mixupInterval(el)
+            el.addEventListener('webkitAnimationIteration', () => {
+                mixupInterval(el)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <header class="card-header">
+            <x-sign>
+                <h2 class="titulo-texto">Meus Horários de Aula</h2>
+            </x-sign>
+        </header>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Hora</th>
+                <th>Segunda-feira</th>
+                <th>Terça-feira</th>
+                <th>Quarta-feira</th>
+                <th>Quinta-feira</th>
+                <th>Sexta-feira</th>
+            </tr>
+            <!-- Os nomes das aulas podem ser alterados conforme necessário -->
+            <!-- As células em branco indicam que não há aula naquele horário -->
+            <!-- Os horários podem ser ajustados conforme necessário -->
+            <!-- Este exemplo é até as 18:30 -->
+            <!-- Você pode adicionar mais linhas conforme necessário -->
+            <tr>
+                <td>08:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="brilho">Programação Python</td>
+            </tr>
+            <tr>
+                <td>09:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="brilho">Programação Python</td>
+            </tr>
+            <tr>
+                <td>09:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="brilho">Programação Python</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="brilho">Programação Python</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td></td>
+                <td class="nome-aula"><span>Estrutura de Dados e Programação</span></td>
+                <td></td>
+                <td class="nome-aula"><span>Estrutura de Dados e Programação</span></td>
+                <td class="brilho">Programação Python</td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td></td>
+                <td class="nome-aula"><span>Estrutura de Dados e Programação</span></td>
+                <td></td>
+                <td class="nome-aula"><span>Estrutura de Dados e Programação</span></td>
+                <td class="brilho">Programação Python</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td></td>
+                <td class="nome-aula"><span>Estrutura de Dados e Programação</span></td>
+                <td></td>
+                <td class="nome-aula"><span>Estrutura de Dados e Programação</span></td>
+                <td class="brilho">Programação Python</td>
+            </tr>
+            <tr>
+                <td class="intervalo">12:30</td>
+                <td class="intervalo" colspan="5">Intervalo</td>
+            </tr>
+            <tr>
+                <td class="intervalo">13:00</td>
+                <td class="intervalo" colspan="5">Intervalo</td>
+            </tr>
+            <tr>
+                <td class="intervalo">13:30</td>
+                <td class="intervalo" colspan="5">Intervalo</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15:30</td>
+                <td><span>Projeto e Análise de Algoritmos
+                    </span>
+                <td></td>
+                <td><span>Projeto e Análise de Algoritmos
+                    </span>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td><span>Projeto e Análise de Algoritmos
+                    </span>
+                <td></td>
+                <td><span>Projeto e Análise de Algoritmos
+                    </span>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16:30</td>
+                <td><span>Projeto e Análise de Algoritmos
+                    </span>
+                <td></td>
+                <td><span>Projeto e Análise de Algoritmos
+                    </span>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td><span>Projeto e Análise de Algoritmos
+                    </span>
+                <td></td>
+                <td><span>Projeto e Análise de Algoritmos
+                    </span>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:30</td>
+                <td><span>Projeto e Análise de Algoritmos</span></td>
+                <td></td>
+                <td><span>Projeto e Análise de Algoritmos</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>18:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>18:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Continue adicionando mais linhas para cada horário -->
+        </table>
+    </div>
+</body>
+
+</html>
