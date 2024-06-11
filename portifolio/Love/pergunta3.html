@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pergunta 3</h1>
+        <p>O que o meu namorado mais gosta?</p>
+        <input type="text" id="resposta">
+        <button onclick="verificarResposta()">Responder</button>
+    </div>
+    <script>
+        function verificarResposta() {
+            var resposta = document.getElementById('resposta').value.toLowerCase();
+            if (resposta === 'paula' || resposta === 'mamada') {
+                window.location.href = 'parabens.html';
+            } else {
+                alert('Resposta incorreta. Tente novamente.');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pergunta 1</h1>
+        <p>Qual apelido do gato mais lindo do mundo?</p>
+        <input type="text" id="resposta">
+        <button onclick="verificarResposta()">Responder</button>
+    </div>
+    <script>
+        function verificarResposta() {
+            var resposta = document.getElementById('resposta').value.toLowerCase();
+            if (resposta === 'nel') {
+                window.location.href = 'pergunta2.html';
+            } else {
+                alert('Resposta incorreta. Tente novamente.');
+            }
+        }
+    </script>
+</body>
+</html>

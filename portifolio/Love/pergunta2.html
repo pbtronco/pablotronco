@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pergunta 2</h1>
+        <p>Quem é o melhor namorado do mundo?</p>
+        <input type="text" id="resposta">
+        <button onclick="verificarResposta()">Responder</button>
+    </div>
+    <script>
+        function verificarResposta() {
+            var resposta = document.getElementById('resposta').value.toLowerCase();
+            if (resposta === 'Pablo' || resposta === 'pablo') {
+                window.location.href = 'pergunta3.html';
+            } else {
+                alert('Resposta incorreta. Tente novamente.');
+            }
+        }
+    </script>
+</body>
+</html>
